@@ -1,59 +1,33 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.2092
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "App1", "App1\App1.jsproj", "{A0799C55-9543-44E6-B1B8-844CD4802A4A}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Debug|ARM = Debug|ARM
-		Debug|ARM64 = Debug|ARM64
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|Any CPU = Release|Any CPU
-		Release|ARM = Release|ARM
-		Release|ARM64 = Release|ARM64
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Debug|ARM.ActiveCfg = Debug|ARM
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Debug|ARM.Build.0 = Debug|ARM
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Debug|ARM.Deploy.0 = Debug|ARM
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Debug|ARM64.ActiveCfg = Debug|ARM64
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Debug|ARM64.Build.0 = Debug|ARM64
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Debug|ARM64.Deploy.0 = Debug|ARM64
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Debug|x64.ActiveCfg = Debug|x64
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Debug|x64.Build.0 = Debug|x64
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Debug|x64.Deploy.0 = Debug|x64
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Debug|x86.ActiveCfg = Debug|x86
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Debug|x86.Build.0 = Debug|x86
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Debug|x86.Deploy.0 = Debug|x86
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Release|ARM.ActiveCfg = Release|ARM
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Release|ARM.Build.0 = Release|ARM
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Release|ARM.Deploy.0 = Release|ARM
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Release|ARM64.ActiveCfg = Release|ARM64
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Release|ARM64.Build.0 = Release|ARM64
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Release|ARM64.Deploy.0 = Release|ARM64
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Release|x64.ActiveCfg = Release|x64
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Release|x64.Build.0 = Release|x64
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Release|x64.Deploy.0 = Release|x64
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Release|x86.ActiveCfg = Release|x86
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Release|x86.Build.0 = Release|x86
-		{A0799C55-9543-44E6-B1B8-844CD4802A4A}.Release|x86.Deploy.0 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B31144C0-93C1-4347-85D9-01CD4117767F}
-	EndGlobalSection
-EndGlobal
+//Coding RLE
+        let string = "тттттииииииииигггггррррррр";
+        let n = 0;
+        for (let i = 0; i < length.string; i++) {
+            if (string[i + 1] = string[i + 2]) {
+                n += 1;
+            }
+            else if (n = 0) {
+                console.log(string[i + 1]);
+            }
+            else if (n < 255) {
+                console.log("#", CharCodeAt(n + 1), string[i + 1]);
+                n = 0;
+            }
+            else for (j = 0; j < (n + 1) / 255; j++) {
+                console.log("#", CharCodeAt(255), string[i + 1])
+            }
+            if (((n + 1) % 255) == 1) {
+                console.log(string[i + 1])
+            }
+            else console.log("#", CharCodeAt(((n + 1) % 255)))
+}
+        //Decoding RLE
+        for (let i = 0; i < length.string; i += 3) {
+            if (string[i + 1] == "#") {
+                for (let n = 0; n < fromCharCode(string[i + 2]); n++) {
+                    console.log(string[i + 3])
+                }
+            }
+            else
+                console.log(string[i + 1]);
+            i -= 2;
+        }
